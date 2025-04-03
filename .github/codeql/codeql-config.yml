@@ -1,0 +1,4 @@
+name: "Custom CodeQL Config"
+queries:
+  - uses: ./codeql/custom-python-secrets.ql
+  - uses: ./codeql/custom-javascript-secrets.ql
