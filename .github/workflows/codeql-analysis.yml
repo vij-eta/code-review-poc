@@ -26,9 +26,9 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: python, javascript
-          config-file: .github/codeql/codeql-config.yml  # Use custom queries
+          config-file: .github/codeql/codeql-config.yml  # Load custom queries
 
-      - name: Perform CodeQL Analysis
+      - name: Run CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
           category: "/language:python, javascript"
